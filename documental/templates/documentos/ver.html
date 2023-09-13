@@ -1,0 +1,15 @@
+{%extends "base.html" %}
+
+{% block titulo %} Editar Documento{% endblock %}
+
+{% block contenido %}
+
+ 
+   
+    <embed id='pdf' src="{{MEDIA_URL}}/documentos/{{formulario.documento}}" height="500" width="100%" ></embed>
+     <br>
+    <a name="" id="" class="btn btn-info " href="{% url 'documentos' %}" role="button">Volver</a>
+
+
+
+ {% endblock %}
